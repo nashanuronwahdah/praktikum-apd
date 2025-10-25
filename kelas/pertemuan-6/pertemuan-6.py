@@ -41,12 +41,32 @@
 # for i in Film:
 #     print(i)
 
-Musik = {
-    "The Chainsmoker": ["All we Know", "The Paris"],
-    "Alan Walker": ["Alone", "Lily"],
-    "Neffex": ["Best of Me",['tes','halo'], "Memories"],
-    'Paramore' : ["Misery Business", "Ain't It Fun", 
-                ['All We Know Is Falling',['Here We Go Again', 'My Heart']],'This Is Why' ]
-}
+# Musik = {
+#     "The Chainsmoker": ["All we Know", "The Paris"],
+#     "Alan Walker": ["Alone", "Lily"],
+#     "Neffex": ["Best of Me",['tes','halo'], "Memories"],
+#     'Paramore' : ["Misery Business", "Ain't It Fun", 
+#                 ['All We Know Is Falling',['Here We Go Again', 'My Heart']],'This Is Why' ]
+# }
 
-print(Musik['Paramore'][2][1][0])
+# print(Musik['Paramore'][2][1][0])
+
+
+Nilai = {
+"Matematika" : 80,
+"B. Indonesia" : 90,
+"B. Inggris" : 81
+}
+#sebelum Setdefault
+print(Nilai)
+print("")
+#menggunakan setdefault
+print("Nilai : ", Nilai.setdefault("Kimia", 70))
+print("")
+#setelah menggunakan setdefault
+print(Nilai)
+{'Matematika': 80, 'B. Indonesia': 90, 'B. Inggris':
+81}
+Nilai : 70
+{'Matematika': 80, 'B. Indonesia': 90, 'B. Inggris':
+81, 'Kimia': 70}
